@@ -1,4 +1,4 @@
-TensorFlow_KNN
-.idea
+TensorFlow_KNN/
+.idea/
 .Python
 .gitignore
