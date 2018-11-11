@@ -46,9 +46,9 @@ with tf.Session() as sess:
                                         feed_dict={training_values: training_set, test_values: testing_set[i]})
         errors.append(round(abs((int(training_set_y[index_in_trainingset])-int(testing_set_y[i]))/int(testing_set_y[i])*100),2))
 
-        print "Test %d, prediction: %s / correct_value: %s [%s %%]" % (i, training_set_y[index_in_trainingset],
+        print("Test %d, prediction: %s / correct_value: %s [%s %%]" % (i, training_set_y[index_in_trainingset],
                                                                     testing_set_y[i],
-                                                                    errors[i])
+                                                                    errors[i]))
 
     avg_error = sum(errors)/len(testing_set)
-    print "Avg. error: %s%%" % (round(avg_error,2))
+    print("Avg. error: %s%%" % (round(avg_error,2)))
