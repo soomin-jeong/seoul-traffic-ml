@@ -11,7 +11,6 @@ def get_day_and_hour(str_date):
     coded_hour = datetime_obj.hour
     return coded_day, coded_hour
 
-
 def make_training_set(file_name):
     training_set = []
     training_set_y = []
@@ -25,7 +24,6 @@ def make_training_set(file_name):
             training_set_y.append(row[3])
 
     return training_set, training_set_y
-
 
 def make_test_set(file_name):
     testing_set = []
